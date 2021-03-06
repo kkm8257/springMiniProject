@@ -1,0 +1,17 @@
+package com.webtoon.spring.mapper;
+
+import java.util.List;
+
+import com.webtoon.spring.domain.HomeAjaxVO;
+import com.webtoon.spring.domain.HomeVO;
+
+public interface HomeMapper {
+	
+	public List<HomeVO> viewAll();
+	
+	public HomeAjaxVO homeAjax();
+	
+	
+//	public List<String> myTest();
+	
+}

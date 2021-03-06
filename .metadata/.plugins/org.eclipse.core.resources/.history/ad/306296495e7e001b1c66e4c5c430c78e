@@ -1,0 +1,39 @@
+package com.comic.home.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.comic.home.service.HomeService;
+
+@Controller
+@RequestMapping("/home")
+public class HomeController {
+
+	private final String MODUEL_NAME ="home";
+	
+	@Autowired
+	private HomeService homeService;
+	
+	@RequestMapping(value="",method=RequestMethod.GET)
+	public String home(Model model) {
+		
+			
+		model.addAttribute("list",homeService.list());
+		
+		
+		
+		return MODUEL_NAME;	
+	}
+	
+	
+	
+	
+	@RequestMapping(value="/test" ,method=RequestMethod.GET)
+	public String home2(Model model) {
+		
+	}
+
+}

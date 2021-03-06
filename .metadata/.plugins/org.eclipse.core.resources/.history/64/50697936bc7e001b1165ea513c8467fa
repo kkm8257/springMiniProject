@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.webtoon.spring.mapper.HomeMapper">
+		
+	
+
+<!-- 전체 내용 조회 -->
+
+<select id="viewAll" resultType="com.webtoon.spring.domain.HomeVO">
+  SELECT * FROM tb_toon
+</select>
+	
+	
+<select id="searchByDay" resultType="com.webtoon.spring.domain.HomeVO">
+  select * tb_toon where toon_dayofweek=#{day}
+</select>
+		
+	
+	
+<!-- <select id="myTest" resultType="String">
+  SELECT * FROM TAB
+</select>
+	 -->
+	
+</mapper>

@@ -1,0 +1,42 @@
+package com.comic.home.vo;
+
+public class ToonVO {
+
+	
+	private int toon_idx;
+	private String toon_genre,toon_name,toon_author,toon_thum;
+	public int getToon_idx() {
+		return toon_idx;
+	}
+	public void setToon_idx(int toon_idx) {
+		this.toon_idx = toon_idx;
+	}
+	public String getToon_genre() {
+		return toon_genre;
+	}
+	public void setToon_genre(String toon_genre) {
+		this.toon_genre = toon_genre;
+	}
+	public String getToon_name() {
+		return toon_name;
+	}
+	public void setToon_name(String toon_name) {
+		this.toon_name = toon_name;
+	}
+	public String getToon_author() {
+		return toon_author;
+	}
+	public void setToon_author(String toon_author) {
+		this.toon_author = toon_author;
+	}
+	public String getToon_thum() {
+		return toon_thum;
+	}
+	public void setToon_thum(String toon_thum) {
+		this.toon_thum = toon_thum;
+	}
+	
+	
+	
+	
+}

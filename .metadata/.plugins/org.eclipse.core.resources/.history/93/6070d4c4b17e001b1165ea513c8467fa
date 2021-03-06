@@ -1,0 +1,76 @@
+package com.webtoon.spring.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.webtoon.spring.domain.HomeAjaxVO;
+import com.webtoon.spring.service.HomeService;
+
+@Controller
+@RequestMapping("/")
+public class MainController {
+
+	
+	
+	
+	@Autowired
+	private HomeService homeService;
+
+	
+	
+	@RequestMapping("")
+	public String viewAll(Model model) {
+	  model.addAttribute("viewAll", homeService.viewAll());
+	  
+	  return "home/home";
+	}
+
+	
+	@RequestMapping("sunday")
+	@ResponseBody
+	public String homeAjax(String day,Model model,HomeAjaxVO ajaxVO) {
+		
+		System.out.println("day : "+day);
+		model.addAttribute("day_list",homeService.homeAjax(day));
+		
+		return ajaxVO.getToon_name() + ajaxVO.getToon_thum();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	@RequestMapping("mytest")  ->>>> 테이블 목록 출력 
+//	public String mytest(Model model) {
+//	  model.addAttribute("myTest", boardService.myTest());
+//	  
+//	  
+//	  System.out.println(">>"+boardService.myTest());
+//	  return "home";
+//	}
+	
+	
+//	@RequestMapping("")
+//	public String main() {
+//		
+//		System.out.println("home");
+//		return "home";
+//		
+//	}
+//	
+	
+}

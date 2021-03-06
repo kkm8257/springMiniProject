@@ -1,0 +1,5 @@
+package com.comic.home.vo;
+
+public class ToonVO {
+
+}

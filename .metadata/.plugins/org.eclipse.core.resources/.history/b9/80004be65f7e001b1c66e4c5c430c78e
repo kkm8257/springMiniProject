@@ -1,0 +1,13 @@
+package com.comic.home.mapper;
+
+import java.util.List;
+
+import com.comic.home.vo.ToonVO;
+
+public interface HomeMapper {
+
+	//홈화면 웹툰 썸네일들 가져오기
+	public List<ToonVO> list();
+	
+	
+}

@@ -1,0 +1,44 @@
+package com.webtoon.spring.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.webtoon.spring.domain.HomeAjaxVO;
+import com.webtoon.spring.domain.HomeVO;
+import com.webtoon.spring.mapper.HomeMapper;
+import com.webtoon.spring.service.HomeService;
+
+
+@Service
+public class HomeServiceImpl  implements HomeService{
+	
+	
+	@Autowired
+	private HomeMapper mapper;
+	
+	@Override
+	public List<HomeVO> viewAll() {
+		return mapper.viewAll();
+	}
+	
+	@Override
+	public HomeAjaxVO homeAjax(String day) {
+		
+		return mapper.homeAjax(day);
+	}
+	
+//	@Override
+//	public List<String> myTest() {
+//		return mapper.myTest();
+//	}
+//	
+//	
+	
+	
+	
+	
+	
+
+}

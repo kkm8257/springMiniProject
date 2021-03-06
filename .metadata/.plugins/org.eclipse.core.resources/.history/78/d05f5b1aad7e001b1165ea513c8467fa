@@ -1,0 +1,9 @@
+package com.webtoon.spring.domain;
+
+public class HomeAjaxVO {
+
+	private String toon_name;
+	private String toon_thum;
+	
+	
+}

@@ -1,0 +1,7 @@
+package com.webtoon.spring.service.impl;
+
+import com.webtoon.spring.service.BoardService;
+
+public class BoardServiceImpl  implements BoardService{
+
+}

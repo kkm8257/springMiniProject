@@ -1,0 +1,5 @@
+package com.comic.home.mapper;
+
+public interface HomeMapper {
+
+}

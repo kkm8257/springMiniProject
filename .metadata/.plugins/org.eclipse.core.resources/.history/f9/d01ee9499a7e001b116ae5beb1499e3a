@@ -1,0 +1,33 @@
+package com.webtoon.spring.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.webtoon.spring.domain.BoardVO;
+import com.webtoon.spring.mapper.BoardMapper;
+import com.webtoon.spring.service.BoardService;
+
+
+@Service
+public class BoardServiceImpl  implements BoardService{
+	
+	
+	@Autowired
+	private BoardMapper mapper;
+	
+	@Override
+	public List<BoardVO> viewAll() {
+		return mapper.viewAll();
+	}
+	
+	@Override
+	public List<String> myTest() {
+		return mapper.viewAll();
+	}
+	
+	
+	
+
+}

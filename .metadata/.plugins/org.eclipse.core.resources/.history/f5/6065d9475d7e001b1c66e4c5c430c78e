@@ -1,0 +1,28 @@
+package com.comic.home.service;
+
+import java.util.List;
+
+import javax.inject.Inject;
+
+import com.comic.home.mapper.HomeMapper;
+import com.comic.home.vo.ToonVO;
+
+public class HomeService {
+	
+	@Inject
+	private HomeMapper homeMapper;
+	
+	
+	public List<ToonVO> list(){
+		
+		
+		System.out.println("service in");
+		
+		System.out.println("list : "+homeMapper.list());
+		
+		return homeMapper.list();
+		
+	}
+	
+
+}

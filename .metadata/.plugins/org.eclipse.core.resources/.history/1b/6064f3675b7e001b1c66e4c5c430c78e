@@ -1,0 +1,10 @@
+package com.comic.home.vo;
+
+public class ToonVO {
+
+	
+	private int toon_idx;
+	private String toon_genre,toon_name,toon_author,toon_thum;
+	
+	
+}

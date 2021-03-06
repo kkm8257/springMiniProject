@@ -1,0 +1,7 @@
+package com.webtoon.spring.service;
+
+public interface BoardService {
+
+	
+	
+}

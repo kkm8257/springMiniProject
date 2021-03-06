@@ -1,0 +1,8 @@
+package com.webtoon.spring.domain;
+
+public class HomeAjaxVO {
+
+	
+	
+	
+}
