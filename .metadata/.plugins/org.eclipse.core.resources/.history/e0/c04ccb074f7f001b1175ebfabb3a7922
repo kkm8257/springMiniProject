@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="/resources/mycss/home.css">
 <%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
 
+출처: https://hackersstudy.tistory.com/42 [공대인들이 직접쓰는 컴퓨터공부방]
 </head>
 <body>
 	<!--
@@ -14,8 +15,8 @@
  
  https://itjy2.tistory.com/109 이미지 출력관련  -->
 
-
-
+<% System.out.println(<c:out ); %>
+	
 		<div class="home_top ">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">

@@ -26,9 +26,10 @@ public class MainController {
 	
 	
 	@RequestMapping("")
-	public String viewAll(Model model) {
+	public String viewAll(Model model,HttpServletRequest request) {
 	  model.addAttribute("viewAll", homeService.viewAll());
 	  model.addAttribute("day_list",homeService.searchByDay(todayFinder()));
+	  System.out.println(">>>day list : "+homeService.searchByDay(todayFinder()));
 
 	  model.addAttribute("chk","goHome");
 	  
@@ -39,8 +40,6 @@ public class MainController {
 	
 	@RequestMapping("home")
 	public String goHome(Model model) {
-		
-		  model.addAttribute("day_list",homeService.searchByDay(todayFinder()));
 		model.addAttribute("chk","goHome");
 		
 		return "home/home";

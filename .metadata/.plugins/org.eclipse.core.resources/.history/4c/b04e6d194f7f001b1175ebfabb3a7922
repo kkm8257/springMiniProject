@@ -14,8 +14,8 @@
  
  https://itjy2.tistory.com/109 이미지 출력관련  -->
 
-
-
+<% System.out.println(<c:out ); %>
+	
 		<div class="home_top ">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">

@@ -14,6 +14,7 @@
  
  https://itjy2.tistory.com/109 이미지 출력관련  -->
 
+<c:out value="${day_list}" default="Korea" escapeXml="true"/>
 
 
 		<div class="home_top ">

@@ -4,6 +4,7 @@
 <%@ include file="../header/nav.jsp" %>
 
 <link rel="stylesheet" href="/resources/mycss/home.css">
+<%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
 
 </head>
 <body>
@@ -14,7 +15,7 @@
  https://itjy2.tistory.com/109 이미지 출력관련  -->
 
 
-	
+
 		<div class="home_top ">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
