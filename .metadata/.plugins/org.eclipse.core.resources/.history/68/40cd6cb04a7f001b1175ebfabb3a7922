@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<link rel="stylesheet" href="/resources/mycss/login.css">
+
+<%@ include file="../header/header.jsp" %>
+<%@ include file="../header/nav.jsp" %>
+</head>
+
+<div class="login-div">
+
+		<form action="" method="post" onsubmit="return blankCheck();"  class="login_form" autocomplete='off' >
+					<div class="login_form_title">ezensta</div>
+					<input type="text" placeholder="ID" name="input_id" id="input_id_id"  autocomplete='off' class="login_input">
+					<input type="password" placeholder="PASSWORD" name="input_pwd"  id="input_id_pwd" autocomplete=off class="login_input">
+					<input type="submit" value="login" class="login_submit_btn">
+					<input type="button" class="login_signIn_btn" onclick="location.href='/insta/enterJoin.do'" value="회원가입">
+		</form>
+
+
+</div>
+
+<%@ include file="../footer/footer.jsp" %>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<link rel="stylesheet" href="/resources/mycss/join.css">
+<%@ include file="../header/header.jsp" %>
+<%@ include file="../header/nav.jsp" %>
+</head>
+<div class="join-div">
+
+
+	<form action="#" method="post" id="form_id" class="join_form"
+		onsubmit='return #' name="form_name"  autocomplete='off'>
+		
+		
+			<div class="join_form_title">sign up</div>
+			<div class="input_frame">	
+				<input type="text" placeholder="NAME" name="input_name"
+					autocomplete='off' id="input_name" class="join_input">
+				<input type="text" placeholder="ID" name="input_id"
+					id="input_id" autocomplete='off' class="join_input join_input_id">
+
+				<!-- 아이디 중복체크 필요 -->
+				<input type="button" value="중복확인" class="chk_id"/>
+							
+				<input type="password" placeholder="PASSWORD" name="input_pwd"
+					autocomplete='off' class="input_pwd join_input" id="input_pwd">
+					
+				<input type="password" placeholder="PASSWORD CHECK" autocomplete='off'
+					class="input_pwd join_input" id="input_pwd_re" >
+
+				<!-- 비밀번호 동일시 여부 체크  -->
+					
+			
+				<input type="text" placeholder="EMAIL" name="input_email"
+					autocomplete='off' id="input_email" class="join_input">
+				<input type="tel" placeholder="PHONE" name="input_email"
+					autocomplete='off' id="input_email" class="join_input">
+					
+				<input type="submit" value="가입" class="join_submit_btn"/>
+				<input type="button" value="뒤로가기" onclick="history.back()" class="join_submit_btn">
+				</div>
+	</form>
+
+
+
+</div>
+
+
+<%@ include file="../footer/footer.jsp" %>
+
+<script>
+
+$('.chk_id').on('click', function() {
+	var form = {
+		day : $('#input_name').val();
+	}
+
+	$.ajax({
+		url : "chk_id",
+		type : "POST",
+		data : form,
+		success : function(data) {
+			
+			console.log(data);
+			var len = Object.keys(data).length;
+			
+			for(var i = 0 ; i <len;i++){
+				console.log(data[i].toon_thum);
+				$('.webtoonlist-div').append("<div class='webtoonlist-box'><div class='box-left'><img src='/filepath/"+data[i].toon_thum +"' class='webtoonlist-boximg'></div>"+
+						"<div class='box-right'><div>"+data[i].toon_name+"</div><div>"+data[i].toon_author+" / "+data[i].toon_genre+"</div></div>"+"</div>"); 
+				
+			}
+			
+		},
+		error : function() {
+			alert("simpleWithObject err");
+		}
+	});
+});
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

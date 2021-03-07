@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap')
+	;
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&family=Sunflower:wght@300&display=swap')
+	;
+
+@font-face {
+	src: url("resources/font/AppleSDGothicNeoM.ttf");
+	font-family: "applefont"
+}
+
+html, body {
+	margin: 0;
+    height: 100%;
+	padding: 0;
+	background-color: #F8F8F8;
+}
+
+
+
+
+
+.myImg {
+	width: 200px;
+	height: 200px;
+}
+
+.home_top {
+	margin-top: 30px;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#carouselExampleIndicators {
+	width: 70%;
+}
+
+.carousel-inner {
+	box-shadow: 5px 5px 25px grey;
+	width: 95%;
+	height: 300px;
+	border-radius: 15px;
+}
+
+.carousel-item{
+
+	height: 300px;
+}
+
+
+.d-block {
+	border-radius: 15px;
+	height:100%;
+}
+
+
+.webtoon-div {
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.day-div {
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.dayBtn {
+	width: 80px;
+	margin-left: 25px;
+	margin-right: 25px;
+	border-radius: 30px;
+	border-color: #6C757D
+}
+
+.webtoonlist-div {
+	padding-left: 120px;
+	width: 80%;
+	margin-top: 40px;
+}
+
+.webtoonlist-box {
+	margin-bottom:30px;
+	display: inline-flex;
+	width: 400px;
+	height: 150px;
+}
+
+.webtoonlist-boximg {
+	width: 150px;
+	height: 150px;
+	border-radius: 15px;
+}
+
+.box-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 30px;
+}
+
+.box-right div:nth-child(1) {
+	font-family: 'Sunflower', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.box-right div:nth-child(2) {
+	font-family: applefont;
+	font-weight: 400;
+	font-size: 15px;
+}

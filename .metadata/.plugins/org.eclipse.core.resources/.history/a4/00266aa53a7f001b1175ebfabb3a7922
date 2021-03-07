@@ -1,0 +1,19 @@
+package com.webtoon.spring.service.impl;
+
+import com.webtoon.spring.domain.UserVO;
+import com.webtoon.spring.service.JoinService;
+
+public class JoinServletImpl implements JoinService{
+	
+	
+	@Override
+	public UserVO chk_id() {
+		
+		
+		
+		
+	}
+
+	
+
+}

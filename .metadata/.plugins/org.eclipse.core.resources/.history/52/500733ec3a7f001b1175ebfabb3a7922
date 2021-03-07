@@ -1,0 +1,9 @@
+package com.webtoon.spring.service;
+
+import com.webtoon.spring.domain.UserVO;
+
+public interface JoinService {
+
+	public UserVO chk_id();
+	
+}

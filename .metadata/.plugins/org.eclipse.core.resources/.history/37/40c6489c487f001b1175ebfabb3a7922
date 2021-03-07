@@ -1,0 +1,12 @@
+package com.webtoon.spring.service;
+
+import java.util.Map;
+
+import com.webtoon.spring.domain.UserVO;
+
+public interface JoinService {
+
+	public UserVO chk_id(String id);
+	
+	public int insertUser(Map p);
+}

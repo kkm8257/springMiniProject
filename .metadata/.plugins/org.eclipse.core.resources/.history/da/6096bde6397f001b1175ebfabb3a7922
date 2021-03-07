@@ -1,0 +1,26 @@
+package com.webtoon.spring.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.webtoon.spring.service.HomeService;
+
+@Controller
+@RequestMapping("/join")
+public class joinController {
+	
+
+	@Autowired
+	private HomeService homeService;
+
+	
+	@RequestMapping("join")
+	public String goJoin(Model model) {
+		model.addAttribute("chk","goJoin");
+
+		return "join/join";
+		
+	}
+}

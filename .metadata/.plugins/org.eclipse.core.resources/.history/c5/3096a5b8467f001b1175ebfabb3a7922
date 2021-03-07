@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.webtoon.spring.mapper.JoinMapper">
+		
+	
+	<select id="chk_id" resultType="com.webtoon.spring.domain.UserVO">
+		select * from tb_login where id=#{id}
+	
+	</select>
+	
+	<insert id="insertUser" >
+		insert into tb_login values(tb_login_seq.nextval(),#{},#{},#{},#{},#{})
+	
+	</insert>
+
+
+</mapper>

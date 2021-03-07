@@ -30,19 +30,37 @@ public class MainController {
 	  model.addAttribute("viewAll", homeService.viewAll());
 	  model.addAttribute("day_list",homeService.searchByDay(todayFinder()));
 
+	  model.addAttribute("chk","goHome");
 	  
 	  return "home/home";
 	}
 
+
+	
+	@RequestMapping("home")
+	public String goHome(Model model) {
+		model.addAttribute("chk","goHome");
+		
+		return "home/home";
+		
+	}
+	
 	
 	@RequestMapping("login")
-	public String goLogin() {
+	public String goLogin(Model model) {
+		model.addAttribute("chk","goLogin");
 		
 		return "login/login";
 		
 	}
 	
-	
+	@RequestMapping("join")
+	public String goJoin(Model model) {
+		model.addAttribute("chk","goJoin");
+
+		return "join/join";
+		
+	}
 	
 	
 	@RequestMapping("searchByDay")
@@ -54,6 +72,8 @@ public class MainController {
 		return (ArrayList)homeService.searchByDay(request.getParameter("day"));
 		
 	}
+	
+
 	
 	
 	public String todayFinder() {

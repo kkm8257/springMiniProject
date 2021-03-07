@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@import 'font.css';
+
+
+
+#navbarsExample04 {
+	margin-left: 60%;
+}
+
+.navbar{
+	height:60px;
+	
+}
+.container-fluid {
+		font-family: 'ELAND_Choice_M';
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-item {
+	font-size: 20px;
+	transition: opacity ease 0.5s 0s;
+}
+
+.nav-item:hover {
+	opacity: 0.4;
+}
+
+
+.navbar-brand {
+	font-size: 40px;
+	font-family: 'Secular One', sans-serif;
+	transition: opacity ease 0.5s 0s;
+}
+
+.navbar-brand:hover {
+	opacity: 0.4;
+}
+

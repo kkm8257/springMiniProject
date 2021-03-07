@@ -1,0 +1,37 @@
+package com.webtoon.spring.service.impl;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.webtoon.spring.domain.UserVO;
+import com.webtoon.spring.mapper.JoinMapper;
+import com.webtoon.spring.service.JoinService;
+
+@Service
+public class JoinServletImpl implements JoinService{
+	
+	
+	@Autowired
+	private JoinMapper joinmapper;
+	
+	@Override
+	public UserVO chk_id(String id) {
+		
+		return joinmapper.chk_id(id);
+		
+		
+	}
+	@Override
+	public int  insertUser(Map param) {
+		
+
+		return joinmapper.insertUser(param);		
+		
+	}
+
+	
+
+}

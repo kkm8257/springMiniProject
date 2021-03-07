@@ -1,0 +1,13 @@
+package com.webtoon.spring.domain;
+
+public class UserVO {
+
+	private int login_idx;
+	private String id;
+	private String pw;
+	private String email;
+	private String phone;
+	private String user_name;
+	
+	
+}

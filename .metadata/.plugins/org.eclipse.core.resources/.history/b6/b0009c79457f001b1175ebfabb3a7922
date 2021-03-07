@@ -1,0 +1,11 @@
+package com.webtoon.spring.mapper;
+
+import com.webtoon.spring.domain.UserVO;
+
+public interface JoinMapper {
+	
+	public UserVO chk_id(String id);
+
+	public int insertUser(String name,String id,String pw,String email,String phone);
+
+}
