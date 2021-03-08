@@ -1,0 +1,24 @@
+
+package com.webtoon.spring.service.impl;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+import com.webtoon.spring.domain.UserVO;
+import com.webtoon.spring.service.LoginService;
+
+
+@Service
+public class LoginServletImpl implements LoginService {
+
+	
+	
+	@Override
+	public UserVO loginUser(Map param) {
+
+		
+		
+	}
+
+}

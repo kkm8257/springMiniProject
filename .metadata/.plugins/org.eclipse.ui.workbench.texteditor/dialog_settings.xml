@@ -2,17 +2,18 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="webtoonlist-div" key="selection"/>
+		<item value="slide" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="slide"/>
+			<item value="submit"/>
+			<item value="family"/>
+			<item value="fami"/>
+			<item value="login_form_title"/>
+			<item value="half"/>
+			<item value="border"/>
 			<item value="webtoonlist-div"/>
-			<item value="carousel-item"/>
-			<item value="data-toggle=&quot;dropdown&quot;"/>
-			<item value="Host"/>
-			<item value="context"/>
-			<item value="com.my.spring.domain.BoardVO"/>
-			<item value="ojdbc"/>
 		</list>
 		<list key="replacehistory">
 		</list>

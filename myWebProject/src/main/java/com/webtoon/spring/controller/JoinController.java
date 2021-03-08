@@ -49,13 +49,15 @@ public class JoinController {
 	
 	
 	@RequestMapping("joinUser")
-	public String goJoin(Model model,HttpServletRequest request) {
+	public String doJoin(Model model,HttpServletRequest request) {
 
 		String name=request.getParameter("input_name");
 		String id=request.getParameter("input_id");
 		String pw=request.getParameter("input_pwd");
 		String email=request.getParameter("input_email");
 		String phone=request.getParameter("input_phone");
+		
+		//스프링에서는 여러개 자료형 못넘기는듯 , 해쉬맵에 담아서 넘겨주고 서비스에서 처리
 		
 		
 		Map param=new HashMap();
@@ -72,7 +74,8 @@ public class JoinController {
 		System.out.println("n : "+n);
 		
 		model.addAttribute("chk","goHome");
-		return "home/home";
+		return "redirect:home";    //주소창 값도 바뀜
+		
 		
 	}
 	

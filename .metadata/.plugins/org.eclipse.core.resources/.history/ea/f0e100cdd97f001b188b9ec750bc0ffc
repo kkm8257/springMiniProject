@@ -1,0 +1,13 @@
+package com.webtoon.spring.service;
+
+import java.util.Map;
+
+public interface LoginService {
+
+	void loginUser(Map param);
+
+	void loginUser(Map param);
+
+	
+	
+}

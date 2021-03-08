@@ -1,0 +1,9 @@
+package com.webtoon.spring.mapper;
+
+import java.util.Map;
+
+public interface LoginMapper {
+
+	public UserVO loginUser(Map param);
+
+}

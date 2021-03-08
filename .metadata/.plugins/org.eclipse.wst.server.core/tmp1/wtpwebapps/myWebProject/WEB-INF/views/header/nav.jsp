@@ -5,6 +5,8 @@
 System.out.println("chk>>"+chk);
 %>
 
+<!--session은 null로 체크할것   -->
+
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark"
 	aria-label="Fourth navbar example">
@@ -19,6 +21,12 @@ System.out.println("chk>>"+chk);
 		<div class="collapse navbar-collapse" data-interval="false"
 			id="navbarsExample04">
 			<ul class="navbar-nav me-auto mb-2 mb-md-0">
+			
+				
+				<% 
+				if(session.getAttribute("session_ok")==null){
+				%>
+
 
 				<%if(chk.equals("goHome")||chk.equals("goJoin")){
 				%>
@@ -45,6 +53,16 @@ System.out.println("chk>>"+chk);
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li> -->
 
+				<%}else if(session.getAttribute("session_ok")!=null&&session.getAttribute("session_ok").equals("ok")){ %>
+				
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="#">내정보</a></li>
+				
+				<li class="nav-item"><a class="nav-link active obookYoutube"
+					aria-current="page" href="#">Obook Youtube</a></li>
+				
+				
+				<%} %>
 			</ul>
 		</div>
 

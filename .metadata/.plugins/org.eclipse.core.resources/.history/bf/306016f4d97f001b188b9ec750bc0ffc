@@ -1,0 +1,18 @@
+
+package com.webtoon.spring.service.impl;
+
+import java.util.Map;
+
+import com.webtoon.spring.service.LoginService;
+
+public class LoginServletImpl implements LoginService {
+
+	
+	
+	@Override
+	public void loginUser(Map param) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

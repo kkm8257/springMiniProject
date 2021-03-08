@@ -2,6 +2,7 @@ package com.webtoon.spring.controller;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -27,7 +28,7 @@ public class MainController {
 	
 	@RequestMapping("")
 	public String viewAll(Model model) {
-	  model.addAttribute("viewAll", homeService.viewAll());
+	  
 	  model.addAttribute("day_list",homeService.searchByDay(todayFinder()));
 
 	  model.addAttribute("chk","goHome");
