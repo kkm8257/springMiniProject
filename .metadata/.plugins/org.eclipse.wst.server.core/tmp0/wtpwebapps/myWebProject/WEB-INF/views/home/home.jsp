@@ -13,7 +13,10 @@
 	WEB-INF안의 폴더에는 직접 밖에서 접근이 불가능
 그래서 이미지는 위의 폴더에서 보시면 resources라는 폴더안에 넣어둔다.
  
- https://itjy2.tistory.com/109 이미지 출력관련  -->
+ https://itjy2.tistory.com/109 이미지 출력관련  
+ 
+ https://thinkerodeng.tistory.com/198
+ -->
 
 
 
@@ -75,8 +78,8 @@
 			<c:forEach items="${day_list }" var="list">
 
 
-				<div class='webtoonlist-box'
-					style="margin-bottom: 30px; display: inline-flex; width: 400px; height: 150px;">
+				<div class='webtoonlist-box' onclick="location.href='goWebToonPage?toon=${list.toon_name}'"
+					style="cursor: pointer;margin-bottom: 30px; display: inline-flex; width: 400px; height: 150px;">
 					<div class='box-left'>
 						<img src='/home_thum_path/${list.toon_thum }'
 							style="width: 150px; height: 150px; border-radius: 15px;"
