@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.webToon-view{
+	
+	display: flex;
+	justify-content: center;
+		
+	
+}
+
+
+.view-top{
+	margin-top:40px;
+	width:70%;
+	height:600px;
+	
+}
+
+.view_mainimg{
+	
+	width:60%;
+	height:100%;
+	
+}

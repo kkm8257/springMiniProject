@@ -30,17 +30,51 @@ public class ToonController {
 	
 	
 	@RequestMapping(value="goWebToonPage" ,method=RequestMethod.GET)
-	public String goWebToonPage(HttpServletRequest request) {
+	public String goWebToonPage(HttpServletRequest request,Model model) {
 		
-		System.out.println("_+_+_ "+request.getParameter("toon"));
+//		System.out.println("_+_+_"+request.getParameter("toon"));
+		
+		String toon_name=request.getParameter("toon");
+		
+//		System.out.println("out : "+ toonServiceImpl.getToonVO(toon_name));
+		
+		model.addAttribute("toonVO", toonServiceImpl.getToonVO(toon_name));
+		
+		
+//		System.out.println("--->"+toonServiceImpl.getToonListVO(toon_name));
+		model.addAttribute("toonListVO",toonServiceImpl.getToonListVO(toon_name));
+		
+		
+		model.addAttribute("chk","goWebToonView");
+
+		
 		
 		//값은 get방식으로 올바르게 넘어옴  이값을가지고 service 처리 필요 db조회 ㅇㅇ
 		
 		
-		
-		return "toon/toon_list_view.jsp";
+		return "toon/toon_list_view";
 	}
+	
+	@RequestMapping(value="goWebToonPageView" ,method=RequestMethod.GET)
+	public String goWebToonPageView(HttpServletRequest request,Model model) {
+		
+		String toon_name=request.getParameter("name");
+		String toon_ep_num=request.getParameter("ep");
 
+		
+		Map param=new HashMap();
+		
+		param.put("toon_name", toon_name);
+		param.put("toon_ep_num", toon_ep_num);
+
+		
+		
+		model.addAttribute("view",toonServiceImpl.getToonView(param));
+		
+		model.addAttribute("chk","goWebToonPageView");
+
+		return "toon/toon_page_view";
+	}
 	
 	
 	

@@ -1,0 +1,58 @@
+package com.webtoon.spring.domain;
+
+public class ToonListVO {
+
+	private int toonlist_idx;
+	private String toonlist_name;
+	private String toonlist_author;
+	private String toonlist_ep_name;
+	private String toonlist_ep_thum;
+	private String toonlist_ep_num;
+	
+	
+	
+	public String getToonlist_ep_num() {
+		return toonlist_ep_num;
+	}
+	public void setToonlist_ep_num(String toonlist_ep_num) {
+		this.toonlist_ep_num = toonlist_ep_num;
+	}
+	public int getToonlist_idx() {
+		return toonlist_idx;
+	}
+	public void setToonlist_idx(int toonlist_idx) {
+		this.toonlist_idx = toonlist_idx;
+	}
+	public String getToonlist_name() {
+		return toonlist_name;
+	}
+	public void setToonlist_name(String toonlist_name) {
+		this.toonlist_name = toonlist_name;
+	}
+	public String getToonlist_author() {
+		return toonlist_author;
+	}
+	public void setToonlist_author(String toonlist_author) {
+		this.toonlist_author = toonlist_author;
+	}
+
+	
+	
+	public String getToonlist_ep_thum() {
+		return toonlist_ep_thum;
+	}
+	public void setToonlist_ep_thum(String toonlist_ep_thum) {
+		this.toonlist_ep_thum = toonlist_ep_thum;
+	}
+	public String getToonlist_ep_name() {
+		return toonlist_ep_name;
+	}
+	public void setToonlist_ep_name(String toonlist_ep_name) {
+		this.toonlist_ep_name = toonlist_ep_name;
+	}
+	
+	
+	
+	
+	
+}

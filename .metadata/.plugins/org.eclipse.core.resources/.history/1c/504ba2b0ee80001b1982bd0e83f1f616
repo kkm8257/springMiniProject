@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<!-- <link rel="stylesheet" href="/resources/mycss/.css">   /css링크 -->
+<%@ include file="../header/header.jsp" %>
+<%@ include file="../header/nav.jsp" %>
+</head>
+
+
+<div class="webToon-view">
+	<div class="view-top">
+		<img src="/toonview/${toonVO.toon_name }${toonVO.toon_mainimg}" >
+	
+	</div>
+
+
+
+
+
+
+</div>
+
+
+<%@ include file="../footer/footer.jsp" %>
+
+</body>
+</html>

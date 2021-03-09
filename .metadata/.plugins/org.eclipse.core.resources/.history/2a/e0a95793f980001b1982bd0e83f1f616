@@ -1,0 +1,43 @@
+package com.webtoon.spring.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.webtoon.spring.domain.ToonListVO;
+import com.webtoon.spring.domain.ToonVO;
+import com.webtoon.spring.mapper.ToonMapper;
+import com.webtoon.spring.service.ToonService;
+
+@Service
+public class ToonServiceImpl implements ToonService {
+
+	@Autowired
+	private ToonMapper mapper;
+	
+	@Override
+	public ToonVO getToonVO(String toon_name) {
+		return mapper.getToonVO(toon_name);
+	}
+
+	@Override
+	public List<ToonListVO> getToonListVO(String toon_name) {
+		
+		List<ToonListVO> list =new ArrayList<ToonListVO>();
+		
+		for(int i = 0 ; i<list.size();i++) {
+			
+			
+			
+		}
+		
+		
+		return mapper.getToonListVO(toon_name);
+	}
+
+
+	
+
+}

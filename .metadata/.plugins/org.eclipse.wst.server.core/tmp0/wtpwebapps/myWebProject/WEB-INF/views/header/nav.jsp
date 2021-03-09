@@ -28,7 +28,7 @@ System.out.println("chk>>"+chk);
 				%>
 
 
-				<%if(chk.equals("goHome")||chk.equals("goJoin")){
+				<%if(chk.equals("goHome")||chk.equals("goJoin")||chk.equals("goWebToonView")||chk.equals("goWebToonPageView")){
 				%>
 				<li class="nav-item"><a class="nav-link active"
 					aria-current="page" href="login">로그인</a></li>

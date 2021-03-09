@@ -149,7 +149,7 @@
 												console.log(data[i].toon_thum);
 												$('.webtoonlist-div')
 														.append(
-																"<div class='webtoonlist-box'><div class='box-left'><img src='/home_thum_path/"+data[i].toon_thum +"' class='webtoonlist-boximg'></div>"
+																"<div class='webtoonlist-box' onclick=\"location.href=\'goWebToonPage?toon="+data[i].toon_name+"\'\" style='cursor: pointer;'><div class='box-left'><img src='/home_thum_path/"+data[i].toon_thum +"' class='webtoonlist-boximg'></div>"
 																		+ "<div class='box-right'><div>"
 																		+ data[i].toon_name
 																		+ "</div><div>"

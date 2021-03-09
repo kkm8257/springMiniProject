@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+html,body{
+	
+	height:140%;
+}
+
+.toonview-div{
+	width:100%;	
+	display:flex;
+	justify-content: center;
+	
+}
+
+
+
+
+
+

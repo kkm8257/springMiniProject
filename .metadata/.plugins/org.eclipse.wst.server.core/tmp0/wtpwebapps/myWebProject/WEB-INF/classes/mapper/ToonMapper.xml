@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.webtoon.spring.mapper.ToonMapper">
+
+<select id="getToonVO" resultType="com.webtoon.spring.domain.ToonVO">
+
+	select * from tb_toon where toon_name=#{toon_name}
+
+</select>		
+	
+<select id="getToonListVO" resultType="com.webtoon.spring.domain.ToonListVO">
+
+	select * from tb_toonlist where toonlist_name=#{toon_name}
+
+
+</select>
+
+
+<select id="getToonView" resultType="com.webtoon.spring.domain.ToonViewVO">
+
+	select * from tb_toonView where toonview_name=#{toon_name} and toonview_ep_num=#{toon_ep_num}
+	
+</select>
+
+</mapper>

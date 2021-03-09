@@ -1,0 +1,10 @@
+package com.webtoon.spring.service;
+
+import com.webtoon.spring.domain.ToonVO;
+
+public interface ToonService {
+
+	
+	public ToonVO getToonVO(String toon_name);
+	
+}

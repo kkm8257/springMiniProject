@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+html,body{
+	
+	height:140%;
+	
+}
+
+.webToon-view{
+	
+	display: flex;
+align-items:center;
+	flex-direction: column;
+	height:600px;
+	
+}
+.view-top{
+	margin-top:40px;
+	width:70%;
+	display:flex;
+	height:100%;
+}
+
+.view-top-desc{
+	display:flex;
+	flex-direction:column;
+	width:40%;
+	height:100%;
+	border-top:1px solid #e8e8e8;
+	border-right:1px solid #e8e8e8;
+	border-bottom:1px solid #e8e8e8;
+	
+}
+.toon-name{
+	padding-top:100px;
+	font-family: 'ELAND_Choice_M';
+	font-size:30px;
+	
+}
+
+.toon-genre{
+		padding-top:100px;
+	
+	font-family: 'ELAND_Choice_M';
+		font-size:20px;
+	
+}
+
+.toon-author{
+	font-family: 'ELAND_Choice_M';
+			font-size:20px;
+	
+}
+
+.view-bottom{
+	width:80%;
+	margin-top:20px;
+	position: relative;
+}
+
+.view-bottom ul{
+	margin-top:30px;
+	-webkit-padding-start:0px;
+	 list-style:none;
+}
+
+.view-li{
+	width:800px;
+	height:220px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom:15px;
+	padding-bottom:10px;
+	display: flex;
+}
+
+.view-li-img{
+	width:250px;
+	height:100%;
+	border-radius:15px;
+	display: block;
+}
+
+.view-top-img{
+	
+
+	width:70%;
+	height:600px;
+	
+}
+
+.view-li-right{
+	display:flex;
+	flex-direction:column;
+	width:550px;
+	height:100%;
+	
+}
+
+.ep_num{
+	
+	margin-left:30px;
+	margin-top:20px;
+	font-size:20px;
+	    font-family: 'ELAND_Choice_M';
+}
+
+.ep_name{ 	
+	font-size:30px;
+	margin-left:24px;
+	margin-top:40px;
+	    font-family: 'ELAND_Choice_M';
+	
+}
+
+
+
+.view_mainimg{
+	
+	width:60%;
+	height:100%;
+
+}
+

@@ -1,0 +1,11 @@
+package com.webtoon.spring.domain;
+
+public class ToonVO {
+
+	private int toon_idx;
+	private String toon_genre;
+	private String toon_name;
+	private String toon_author;
+	private String toon_thum;
+	
+}

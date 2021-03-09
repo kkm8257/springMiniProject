@@ -1,0 +1,13 @@
+package com.webtoon.spring.domain;
+
+public class ToonlistVO {
+
+	private int toonlist_idx;
+	private String toonlist_name;
+	private String toonlist_author;
+	private String toonlist_ep;
+	private String toolist_ep_thum;
+	
+	
+	
+}

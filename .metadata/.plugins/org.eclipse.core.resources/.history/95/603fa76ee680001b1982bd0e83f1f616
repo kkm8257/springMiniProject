@@ -1,0 +1,8 @@
+package com.webtoon.spring.service;
+
+public interface ToonService {
+
+	
+	
+	
+}

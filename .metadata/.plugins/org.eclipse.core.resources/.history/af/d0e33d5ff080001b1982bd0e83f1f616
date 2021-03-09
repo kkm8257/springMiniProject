@@ -1,0 +1,11 @@
+package com.webtoon.spring.mapper;
+
+
+import com.webtoon.spring.domain.ToonVO;
+
+public interface ToonMapper {
+	
+
+	public ToonVO getToonVO(String toon_name);
+	
+}

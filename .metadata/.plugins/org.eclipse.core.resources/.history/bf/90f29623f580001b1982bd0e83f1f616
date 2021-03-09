@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.webToon-view{
+	
+	display: flex;
+align-items:center;
+	flex-direction: column;
+	height:600px;
+	
+}
+.view-top{
+	margin-top:40px;
+	display:flex;
+	height:100%;
+}
+
+.view-bottom{
+	margin-top:20px;
+}
+
+.view-top-img{
+	
+
+	width:70%;
+	height:600px;
+	
+}
+
+.view-top-desc{
+	width:40%;
+	height:100%;
+		border-top:1px solid #e8e8e8;
+	border-right:1px solid #e8e8e8;
+	border-bottom:1px solid #e8e8e8;
+	
+}
+
+.view_mainimg{
+	
+	width:60%;
+	height:100%;
+
+}
+

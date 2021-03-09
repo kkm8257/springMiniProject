@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
              
              <Context docBase="C:\spring_toon\thumnail" path="/home_thum_path" reloadable="true"/>
-             <Context docBase="C:\spring_toon\toon\" path="/toonlist" reloadable="true"/>
+             <Context docBase="C:\spring_toon\toon\" path="/toonview" reloadable="true"/>
 
              
              
