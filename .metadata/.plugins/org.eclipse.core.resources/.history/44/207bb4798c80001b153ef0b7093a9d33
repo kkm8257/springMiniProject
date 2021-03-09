@@ -1,0 +1,47 @@
+package com.webtoon.spring.controller;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.webtoon.spring.domain.UserVO;
+import com.webtoon.spring.service.MyInfoService;
+
+@Controller
+public class MyInfoController {
+
+	
+	@Autowired
+	private MyInfoService myInfoService;
+	
+	
+	@RequestMapping("myInfo")
+	public String goHome(Model model,HttpSession session) {
+			
+		
+		String id=(String)session.getAttribute("session_id");
+		
+		model.addAttribute("myInfo",(UserVO)myInfoService.getMyInfo(id));
+		model.addAttribute("chk","goMyInfo");
+		
+		return "myinfo/myinfo";
+		
+	}
+	
+	
+	@RequestMapping("logout")
+	public String logout(Model model,HttpSession session) {
+			
+		session.invalidate();
+		
+		model.addAttribute("chk","goHome");
+		
+		return "home/home";
+		
+	}
+	
+	
+}

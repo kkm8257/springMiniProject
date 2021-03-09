@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+.myinfo-div{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+

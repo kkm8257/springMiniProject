@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+<link rel="stylesheet" href="/resources/mycss/login.css">
+
+<%@ include file="../header/header.jsp" %>
+<%@ include file="../header/nav.jsp" %>
+</head>
+
+<%String chk  = (String)session.getAttribute("session_ok");
+	
+
+%>
+
+<div class="login-div">
+
+		<form action="loginUser" method="post" onsubmit="return blankCheck();"  class="login_form" autocomplete='off' >
+					<div class="login_form_title">OBOOK</div>
+					<div class="login_form_ment">당신도 작가가 될 수 있습니다.</div>
+					<input type="text" placeholder="ID" name="input_id" id="input_id_id"  autocomplete='off' class="login_input">
+					<input type="password" placeholder="PASSWORD" name="input_pwd"  id="input_id_pwd" autocomplete=off class="login_input">
+					<input type="submit" value="login" class="login_submit_btn">
+					<input type="button" class="login_signIn_btn" onclick="location.href='join'" value="회원가입">
+		</form>
+
+
+</div>
+
+<%@ include file="../footer/footer.jsp" %>
+
+<script>
+
+$(document).ready(function() {
+	alert("첫번째 ready()"); 
+});
+
+/*공백 허가X 처리  */
+function blankCheck(){
+	console.log("come");
+	var id=$('#input_id_id').val();
+	var pwd=$('#input_id_pwd').val();
+
+	if(id==''||pwd==''){
+		console.log(id);
+		console.log(pwd);
+		alert("공백을 입력하지마세요.");
+		return false;
+	}
+	else{
+		return true;
+	}			
+	
+} 
+	
+
+</script>
+
+</body>
+</html>

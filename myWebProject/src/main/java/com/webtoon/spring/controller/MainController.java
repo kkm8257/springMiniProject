@@ -2,15 +2,18 @@ package com.webtoon.spring.controller;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import javax.swing.plaf.synth.SynthSeparatorUI;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.webtoon.spring.domain.HomeVO;
 import com.webtoon.spring.service.HomeService;
@@ -41,8 +44,9 @@ public class MainController {
 	@RequestMapping("home")
 	public String goHome(Model model) {
 		
-		  model.addAttribute("day_list",homeService.searchByDay(todayFinder()));
+		model.addAttribute("day_list",homeService.searchByDay(todayFinder()));
 		model.addAttribute("chk","goHome");
+		
 		
 		return "home/home";
 		
@@ -50,9 +54,9 @@ public class MainController {
 	
 	
 	@RequestMapping("login")
-	public String goLogin(Model model) {
+	public String goLogin(Model model,HttpSession session) {
 		model.addAttribute("chk","goLogin");
-		
+
 		return "login/login";
 		
 	}
@@ -79,7 +83,7 @@ public class MainController {
 
 	
 	
-	public String todayFinder() {
+	public static String todayFinder() {
 		
 		
 		String[] weekDay = { "일", "월", "화", "수", "목", "금", "토" };     
@@ -93,15 +97,7 @@ public class MainController {
 		      return today;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 //	@RequestMapping("mytest")  ->>>> 테이블 목록 출력 
@@ -122,5 +118,9 @@ public class MainController {
 //		
 //	}
 //	
+	
+//	@RequestMapping("goWebToonPage")
+	
+	
 	
 }

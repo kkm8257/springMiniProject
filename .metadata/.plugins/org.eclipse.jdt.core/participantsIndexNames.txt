@@ -21,3 +21,5 @@ C:\Users\kkm\Desktop\mySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsea
 \newWebToonProject\src\main\java
 C:\Users\kkm\Desktop\mySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3214740607.index
 \myWebProject\src\main\java
+C:\Users\kkm\Desktop\mySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1807840617.index
+\myWebProject\src\main\java

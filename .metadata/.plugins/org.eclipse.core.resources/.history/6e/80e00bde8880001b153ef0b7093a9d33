@@ -1,0 +1,31 @@
+package com.webtoon.spring.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.webtoon.spring.service.MyInfoService;
+
+@Controller
+public class MyInfoController {
+
+	
+	@Autowired
+	private MyInfoService myInfoService;
+	
+	
+	@RequestMapping("myInfo")
+	public String goHome(Model model) {
+		
+		
+		
+		model.addAttribute("myInfo",);
+		model.addAttribute("chk","goHome");
+		
+		return "home/home";
+		
+	}
+	
+	
+}

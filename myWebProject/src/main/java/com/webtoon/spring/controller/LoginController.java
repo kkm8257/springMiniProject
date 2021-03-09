@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.webtoon.spring.domain.UserVO;
 import com.webtoon.spring.service.LoginService;
@@ -25,7 +26,8 @@ public class LoginController {
 	
 	
 	@RequestMapping("loginUser")
-	public String dologin(Model model,HttpServletRequest request) {
+	public String dologin(Model model,HttpServletRequest request,HttpSession session) {
+		
 		
 		String id= request.getParameter("input_id");
 		String pw=request.getParameter("input_pwd");
@@ -35,23 +37,38 @@ public class LoginController {
 		param.put("id",id);
 		param.put("pw",pw);
 		
-		HttpSession session = request.getSession();
-
-		
 		UserVO loginUser = loginService.loginUser(param);
 		
-		System.out.println(">>>>>"+loginUser.getId());
-		System.out.println(">>>>>"+loginUser.getPw());
+		if(loginUser!=null) {
+			System.out.println(">>>>>"+loginUser.getId());
+			System.out.println(">>>>>"+loginUser.getPw());
+			//로그인 이제 추가 세션 할당
+			session.removeAttribute("nologin");
+			session.setAttribute("session_ok", "ok");
+			session.setAttribute("session_id",id);
+			return "redirect:home";
+
+			
+		}else {
+			//로그인 실패시 처리 필요 session이 아니라 model에 담아서 처리
+				session.removeAttribute("session_ok");
+				
+				model.addAttribute("nologin", "잘못된 로그인 정보입니다.");
+				model.addAttribute("chk","goLogin");
+
+			}
+			
+			return "login/login";
+
+		}
 		
-		//로그인 이제 추가 세션 할당
-		session.setAttribute("session_ok", "ok");
-		session.setAttribute("session_id",id);
+
 		
-		return "redirect:home";
+		
+		
 		
 	}
 	
 	
 	
 	
-}

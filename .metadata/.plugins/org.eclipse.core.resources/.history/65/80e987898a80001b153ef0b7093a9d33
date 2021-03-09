@@ -1,0 +1,10 @@
+package com.webtoon.spring.service;
+
+
+
+public interface MyInfoService {
+
+	Object getMyInfo(String id);
+
+	
+}
