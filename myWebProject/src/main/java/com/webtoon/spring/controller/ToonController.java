@@ -46,10 +46,6 @@ public class ToonController {
 		
 		
 		model.addAttribute("chk","goWebToonView");
-
-		
-		
-		//값은 get방식으로 올바르게 넘어옴  이값을가지고 service 처리 필요 db조회 ㅇㅇ
 		
 		
 		return "toon/toon_list_view";

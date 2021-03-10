@@ -11,7 +11,7 @@ System.out.println("chk>>"+chk);
 <nav class="navbar navbar-expand-md navbar-dark bg-dark"
 	aria-label="Fourth navbar example">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="home">OBook</a>
+		<a class="navbar-brand" href="home">Webtoon</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 			data-bs-target="#navbarsExample04" aria-controls="navbarsExample04"
 			aria-expanded="false" aria-label="Toggle navigation">
@@ -46,8 +46,8 @@ System.out.println("chk>>"+chk);
 				<%
 						}
 				 %>		
-				<li class="nav-item"><a class="nav-link active obookYoutube"
-					aria-current="page" href="#">Obook Youtube</a></li>
+			<!-- 	<li class="nav-item"><a class="nav-link active obookYoutube"
+					aria-current="page" href="#">Obook Youtube</a></li> -->
 
 				<!--   <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -62,8 +62,8 @@ System.out.println("chk>>"+chk);
 				<li class="nav-item"><a class="nav-link active"
 					aria-current="page" href="logout">로그아웃</a></li>
 				
-				<li class="nav-item"><a class="nav-link active obookYoutube"
-					aria-current="page" href="#">Obook Youtube</a></li>
+			<!-- 	<li class="nav-item"><a class="nav-link active obookYoutube"
+					aria-current="page" href="#">Obook Youtube</a></li> -->
 				
 				
 				<%} %>
